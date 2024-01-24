@@ -8,7 +8,15 @@
 
     <link rel="icon" type="image/x-icon" href="{{asset('assets/img/favicon.png')}}">
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5E4MDVSJ2W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-5E4MDVSJ2W');
+</script>
     <!-- bootstrap grid css -->
     <link rel="stylesheet" href="{{asset('assets/css/plugins/bootstrap-grid.css')}}">
 
