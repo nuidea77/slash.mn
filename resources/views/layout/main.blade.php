@@ -17,6 +17,7 @@
 
   gtag('config', 'G-5E4MDVSJ2W');
 </script>
+<meta name="google-site-verification" content="LW9nb-YFzvQ5UE6xZTgKT1YO2_Y2wQP5YoJut1WQUhU" />
     <!-- bootstrap grid css -->
     <link rel="stylesheet" href="{{asset('assets/css/plugins/bootstrap-grid.css')}}">
 
