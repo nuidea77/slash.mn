@@ -41,8 +41,8 @@
                                     <h6 class="mil-muted mil-mb-30">Cошиал хаяг</h6>
 
                                     <ul class="mil-menu-list">
-                                        <li><a href="https://www.facebook.com/slash.mn" class="mil-light-soft">Facebook</a></li>
-                                        <li><a href="https://www.instagram.com/slash.mn" class="mil-light-soft">Instagram</a></li>
+                                        <li><a href="#" onclick="window.open('https://www.facebook.com/slash.mn')"  class="mil-light-soft">Facebook</a></li>
+                                        <li><a href="#" onclick="window.open('https://www.instagram.com/slash.mn')"  class="mil-light-soft">Instagram</a></li>
                                     </ul>
 
                                 </div>
@@ -54,7 +54,7 @@
 
                                     <h6 class="mil-muted mil-mb-30">Холбоо барих</h6>
 
-                                    <p class="mil-light-soft mil-up"><a href="tel:+97697101015">+976 9710-1015</a> <span class="mil-no-wrap"><a href="mailto:info@slash.mn">info@slash.mn</a></span></p>
+                                    <p class="mil-light-soft mil-up"><a href="#" onclick="window.location='tel:+97697101015'; return false;" class="external">+976 9710-1015</a> <span class="mil-no-wrap"><a href="#" onclick="window.location='mailto:info@slash.mn'; return false;" class="external">info@slash.mn</a></span></p>
 
                                 </div>
                                 <!-- <div class="col-lg-4 mil-mb-60">

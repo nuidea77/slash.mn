@@ -31,7 +31,16 @@
         <section id="contact">
             <div class="container mil-p-120-90">
                 <h3 class="mil-center mil-up mil-mb-120">Үнийн санал авах форм </h3>
-                <form class="row align-items-center"  action="{{ route('submitFeedback') }}" method="post">
+                @if(Session::has('success'))
+
+                <div class="alert alert-success">
+
+                    {{Session::get('success')}}
+
+                </div>
+
+            @endif
+                <form class="row align-items-center"  action="{{ route('contact.us.store') }}" method="post">
                     @csrf
                     <div class="col-lg-6 mil-up">
                         <input type="text" placeholder="Нэр" name="name" required>
@@ -55,7 +64,7 @@
                         </select>
                     </div>
                     <div class="col-lg-12 mil-up">
-                        <textarea placeholder="Төслийн талаар дэлгэрэнгүй мэдээлэл бичнэ үү" name="comments" required></textarea>
+                        <textarea placeholder="Төслийн талаар дэлгэрэнгүй мэдээлэл бичнэ үү" name="comment" required></textarea>
                     </div>
                     <div class="col-lg-8">
                         <p class="mil-up mil-mb-30"><span class="mil-accent">*</span> Бид таны хувийн мэдээллийг гуравдагч этгээдэд задруулахгүй гэдгээ амлаж байна.</p>

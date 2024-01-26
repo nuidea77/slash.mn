@@ -16,8 +16,8 @@
                                         <div class="mil-mb-30">
                                             <h6 class="mil-muted  mil-mb-30">Холбоо барих</h6>
                                             <ul class="mil-menu-list mil-up ">
-                                                <li><a class="mil-light-soft" href="tel:+97697101015"> +976 9710-1015</a></li>
-                                                <li><a class="mil-light-soft" href="mailto:info@slash.mn">info@slash.mn</a></li>
+                                                <li><a class="mil-light-soft" href="#" onclick="window.location='tel:+97697101015'; return false;" class="external"> +976 9710-1015</a></li>
+                                                <li><a class="mil-light-soft" href="#" onclick="window.location='mailto:info@slash.mn'; return false;" class="external">info@slash.mn</a></li>
 
                                             </ul>
 
@@ -33,9 +33,9 @@
                                             <h6 class="mil-muted mil-up mil-mb-30">Сошиал хаяг</h6>
                                             <ul class="mil-social-icons mil-up">
 
-                                                <li><a href="https://www.facebook.com/slash.mn" target="_blank" class="social-icon"> <i class="fab fa-facebook"></i></a></li>
+                                                <li><a href="#" onclick="window.open('https://www.facebook.com/slash.mn')" class="external"  class="social-icon"> <i class="fab fa-facebook"></i></a></li>
 
-                                                <li><a href="https://www.instagram.com/slash.mn" target="_blank" class="social-icon"> <i class="fab fa-instagram"></i></a></li>
+                                                <li><a href="#" onclick="window.open('https://www.instagram.com/slash.mn')" class="external" class="social-icon"> <i class="fab fa-instagram"></i></a></li>
                                             </ul>
 
 

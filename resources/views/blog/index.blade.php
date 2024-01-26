@@ -89,7 +89,16 @@
                 <h4 class="mil-up mil-mb-60">И-мэйлээ бүртгүүлээд дижитал маркетинг, вэбсайтын талаар зөвлөгөө болон хямдралын мэдээллийг урьдчилан аваарай.</h4>
                 <div class="row justify-content-center mil-up">
                     <div class="col-lg-4">
-                        <form class="mil-subscribe-form mil-subscribe-form-2 mil-up" action="{{ route('subscribe') }}" method="post">
+                        @if(Session::has('success'))
+
+                        <div class="alert alert-success">
+
+                            {{Session::get('success')}}
+
+                        </div>
+
+                    @endif
+                        <form class="mil-subscribe-form mil-subscribe-form-2 mil-up" action="{{ route('subscribe.store') }}" method="post">
                             @csrf
                             <input type="email" name="email" placeholder="И-мэйл хаягаа бичнэ үү" required>
                             <button type="submit" class="mil-button mil-icon-button-sm mil-arrow-place"></button>

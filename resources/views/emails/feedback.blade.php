@@ -2,13 +2,13 @@
 <html>
 <body>
 
-<h2>New Feedback Submission</h2>
-<p>Name: {{ $formData['name'] }}</p>
-<p>Position: {{ $formData['position'] }}</p>
-<p>Email: {{ $formData['email'] }}</p>
-<p>Number: {{ $formData['number'] }}</p>
-<p>Service: {{ $formData['service'] }}</p>
-<p>Comments: {{ $formData['comments'] }}</p>
+<h2>Үнийн санал авах хүсэлт</h2>
+<p>Name: {{ $data->name }}</p>
+<p>Position: {{ $data->position }}</p>
+<p>Email: {{ $data->email}}</p>
+<p>Number: {{ $data->number }}</p>
+<p>Service: {{ $data->service }}</p>
+<p>Comments: {{ $data->comment }}</p>
 
 </body>
 </html>

@@ -5,27 +5,30 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\FeedbackFormMail;
-
+use App\Models\Contact;
 class ContactController extends Controller
-{
 
-    public function submitFeedback(Request $request)
+{
+    public function index(){
+        return view('pages.contact');
+    }
+
+    public function store(Request $request)
     {
-        // Validate the form data (customize validation rules as needed)
-        $validatedData = $request->validate([
+        $request->validate([
             'name' => 'required|string|max:255',
             'position' => 'required|string|max:255',
             'email' => 'required|email|max:255',
             'number' => 'required|numeric',
             'service' => 'required|string',
-            'comments' => 'required|string',
+            'comment' => 'required|string',
         ]);
-
-        // Send an email with the form data
-        Mail::to('info@slash.mn')->send(new FeedbackFormMail($validatedData));
-
-        // You might also want to redirect the user to a thank-you page
-        return redirect()->route('thankYouPage');
+        Contact::create($request->all());
+        return redirect()->back()
+                         ->with(['success' => 'Таны мэдээлэл амжилттай илгээгдлээ. Бид тун удахгүй холбогдох болно.']);
     }
 }
+
+
+
 

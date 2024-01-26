@@ -28,7 +28,6 @@ use App\Http\Controllers\ContactController;
 */
 
 Route::get('/', [MainController::class, 'index']);
-Route::get('/contact', [PageController::class, 'contact']);
 Route::get('/blog', [PostController::class, 'index']);
 Route::get('/blog/category/{id}', [PostController::class, 'category']);
 Route::get('/blog/{slug}', [PostController::class, 'view']);
@@ -37,9 +36,9 @@ Route::get('/service/{slug}', [ServiceController::class, 'view']);
 Route::get('/portfolios', [PortfolioController::class, 'index']);
 Route::get('/portfolio/{id}', [PortfolioController::class, 'view']);
 // mail controller
-Route::post('/subscribe', [SubscriptionController::class, 'subscribe'])->name('subscribe');
-Route::post('/submit-feedback', [ContactController::class, 'submitFeedback'])->name('submitFeedback');
-// xml controller
+Route::post('/subscribe', [SubscriptionController::class, 'store'])->name('subscribe.store');
+Route::get('/contact', [ContactController::class, 'index']);
+Route::post('/contact', [ContactController::class, 'store'])->name('contact.us.store');
 Route::get('/sitemap.xml', [SitemapController::class, 'generate']);
 Route::get('/posts-sitemap.xml', [SitemapController::class, 'generatePosts']);
 Route::get('/services-sitemap.xml', [SitemapController::class, 'generateServices']);
