@@ -76,7 +76,7 @@
                         <div class="mil-about-photo mil-mb-90">
                             <div class="mil-lines-place"></div>
                             <div class="mil-up mil-img-frame" style="padding-bottom: 160%;">
-                                <img src="assets/img/cc.png" alt="img" class="mil-scale" data-value-1="1" data-value-2="1.2">
+                                <img src="{{asset('assets/img/cc.webp')}}" alt="img" class="mil-scale" data-value-1="1" data-value-2="1.2">
                             </div>
                         </div>
 
