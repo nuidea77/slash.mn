@@ -1,6 +1,6 @@
 @extends('layout.main')
 @section('metaShare')
-<meta property="og:url"            content="http://www.slash.mn/service/{{ $data->slug }} " />
+<meta property="og:url"            content="https://slash.mn/service/{{ $data->slug }} " />
 <meta property="og:type"          content="website" />
 <meta property="og:title"  name="title"       content="{{ $data->name }}" />
 <meta property="og:description" name="description"   content="{{ $data->keywords }}" />

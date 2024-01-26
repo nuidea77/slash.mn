@@ -1,6 +1,6 @@
 @extends('layout.main')
 @section('metaShare')
-<meta property="og:url"            content="http://www.slash.mn/blog/{{ $data->slug }} " />
+<meta property="og:url"            content="https://slash.mn/blog/{{ $data->slug }} " />
 <meta property="og:type"          content="website" />
 <meta property="og:title"  name="title"       content="{{ $data->seo_title }}" />
 <meta property="og:description" name="description"   content="{{ $data->meta_description }}" />
@@ -9,7 +9,7 @@
 <meta property="og:title" content="{{ $data->seo_title }}">
 <meta property="og:description" content="{{ $data->meta_keywords }}">
 <meta property="og:image" content="{{ Voyager::image( $data->image ) }}">
-<meta property="og:url" content="http://www.slash.mn/blog/{{ $data->slug }} ">
+<meta property="og:url" content="https://slash.mn/blog/{{ $data->slug }} ">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="{{ $data->seo_title }}">
 <meta name="twitter:description" content="{{ $data->meta_keywords }}">
