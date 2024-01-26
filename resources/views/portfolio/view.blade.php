@@ -1,10 +1,19 @@
 @extends('layout.main')
 @section('metaShare')
-<meta property="og:url"            content="http://www.slash.mn/portfolio/{{ $data->id }} " />
+<meta property="og:url"            content="https://www.slash.mn/portfolio/{{ $data->id }} " />
 <meta property="og:type"          content="website" />
 <meta property="og:title"  name="title"       content="{{ $data->name }}" />
 <meta property="og:description" name="description"   content="{{ $data->keywords }}" />
 <meta property="og:keywords" name="keywords"   content="{{ $data->keywords }}" />
+<meta property="og:image"         content="{{asset('assets/img/slash.webp')}}" />
+<meta property="og:title" content="{{ $data->name }}">
+<meta property="og:description" content="{{ $data->keywords }}">
+<meta property="og:image" content="{{ Voyager::image( $data->image ) }}">
+<meta property="og:url" content="https://www.slash.mn/portfolio/{{ $data->id }} ">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{{ $data->name }}">
+<meta name="twitter:description" content="{{ $data->keywords }}">
+<meta name="twitter:image" content="{{asset('assets/img/slash.webp')}}">
 @stop
 
 @section('content')

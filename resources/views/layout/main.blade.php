@@ -31,6 +31,16 @@
     <title>Slash creative agency</title>
     <meta name="keywords" content="Вэб хөгжүүлэгч, Вэб хөгжүүлэх үйлчилгээ, social marketing, digital marketing, сошиал маркетинг, дижитал маркетинг вэбсайт хөгжүүлэх үйлчилгээ, Веб хөгжүүлэгч, вэбсайт, вэб компани, веб компани,  хөгжүүлнэ, вэб хийдэг байгууллага, вэб сайт хийдэг байгууллага,">
     <meta name="description" content="Вэб хөгжүүлэгч, Вэб хөгжүүлэх үйлчилгээ, social marketing, digital marketing, сошиал маркетинг, дижитал маркетинг вэбсайт хөгжүүлэх үйлчилгээ, Веб хөгжүүлэгч, вэбсайт, вэб компани, веб компани,  хөгжүүлнэ, вэб хийдэг байгууллага, вэб сайт хийдэг байгууллага,">
+    <meta property="og:title" content="Slash creative agency">
+    <meta property="og:description" content="Вэб хөгжүүлэгч, Вэб хөгжүүлэх үйлчилгээ, social marketing, digital marketing, сошиал маркетинг, дижитал маркетинг вэбсайт хөгжүүлэх үйлчилгээ, Веб хөгжүүлэгч, вэбсайт, вэб компани, веб компани,  хөгжүүлнэ, вэб хийдэг байгууллага, вэб сайт хийдэг байгууллага,">
+    <meta property="og:image" content="{{asset('assets/img/slash.webp')}}">
+    <meta property="og:url" content="https://slash.mn">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Slash creative agency">
+    <meta name="twitter:description" content="Вэб хөгжүүлэгч, Вэб хөгжүүлэх үйлчилгээ, social marketing, digital marketing, сошиал маркетинг, дижитал маркетинг вэбсайт хөгжүүлэх үйлчилгээ, Веб хөгжүүлэгч, вэбсайт, вэб компани, веб компани,  хөгжүүлнэ, вэб хийдэг байгууллага, вэб сайт хийдэг байгууллага,">
+    <meta name="twitter:image" content="{{asset('assets/img/slash.webp')}}">
+
+
     @yield('metaShare')
 </head>
 

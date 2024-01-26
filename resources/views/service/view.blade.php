@@ -5,6 +5,14 @@
 <meta property="og:title"  name="title"       content="{{ $data->name }}" />
 <meta property="og:description" name="description"   content="{{ $data->keywords }}" />
 <meta property="og:keywords" name="keywords"   content="{{ $data->keywords }}" />
+<meta property="og:title" content="{{ $data->name }}">
+<meta property="og:description" content="{{ $data->keywords }}">
+<meta property="og:image" content="{{asset('assets/img/slash.webp')}}">
+<meta property="og:url" content="https://slash.mn/service/{{ $data->slug }}">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{{ $data->name }}">
+<meta name="twitter:description" content="{{ $data->keywords }}">
+<meta name="twitter:image" content="{{asset('assets/img/slash.webp')}}">
 @stop
 
 @section('content')
