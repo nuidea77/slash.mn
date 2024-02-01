@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="facebook-domain-verification" content="9p2qheb1wp6ol5iszqr86ojv9py9x2" />
 
     <link rel="icon" type="image/x-icon" href="{{asset('assets/img/favicon.png')}}">
 
